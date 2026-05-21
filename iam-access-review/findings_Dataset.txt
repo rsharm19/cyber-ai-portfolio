@@ -1,0 +1,60 @@
+**Critical Findings:**
+
+- temp.admin (username: temp.admin) is an inactive privileged account and is a CRITICAL finding.
+- legacy.admin (username: legacy.admin) is an inactive privileged account and is a CRITICAL finding.
+- test.account (username: test.account) is an inactive account with a potentially risky username and is a CRITICAL finding.
+
+**High Risk Users:**
+
+- john.admin (username: john.admin) has a risk_score of 95 and is assigned a HIGH RISK status.
+- aws.root (username: aws.root) has a risk_score of 100 and is assigned a HIGH RISK status.
+- old.contractor (username: old.contractor) has a risk_score of 97 and is assigned a HIGH RISK status.
+
+**MFA Issues:**
+
+- The following usernames do not have MFA enabled:
+  - john.admin
+  - temp.admin
+  - shared.ops
+  - legacy.admin
+  - aws.root
+  - contractor.aws
+  - old.contractor
+
+**Dormant Accounts:**
+
+- The following accounts are dormant:
+  - temp.admin
+  - legacy.admin
+  - test.account
+  - old.contractor
+
+**Shared Account Risks:**
+
+- shared.ops (username: shared.ops) is a shared account and should be reviewed for compliance risks.
+
+**Contractor Risks:**
+
+- contractor.aws (username: contractor.aws) is a contractor account and should be reviewed for expiration risk. The account expires on 2025-11-30.
+- old.contractor (username: old.contractor) is an expired contractor account.
+
+**Recommended Remediation:**
+
+1. Activate inactive accounts as soon as possible: 
+   - temp.admin
+   - legacy.admin
+   - test.account
+2. Update MFA status for non-compliant accounts:
+   - john.admin
+   - shared.ops
+   - aws.root
+   - contractor.aws
+   - old.contractor
+3. Revoke elevated privileges for high-risk users:
+   - john.admin
+   - aws.root
+   - contractor.aws
+4. Remove outdated contractor accounts:
+   - old.contractor
+5. Regularly review shared accounts for compliance risks:
+   - shared.ops
