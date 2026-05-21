@@ -1,0 +1,7 @@
+username	role	application	status
+cloud.admin	Global Admin	Azure	Active
+cloudtest.user	Employee	Salesforce	Active
+Testuser1.dev	Developer	AWS	Active
+Testuser2.account	Global Admin	AWS	Inactive
+Testuser3.hr	HR Manager	Workday	Active
+temp.admin	Privileged Admin	Azure	Inactive

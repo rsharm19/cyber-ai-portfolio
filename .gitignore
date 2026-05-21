@@ -1,0 +1,2 @@
+##Ignore .env file to upload to git
+.env

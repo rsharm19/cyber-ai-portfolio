@@ -1,0 +1,18 @@
+Based on the access review data provided, I have identified the following security concerns:
+
+1. **Inactive Privileged Accounts:**
+   - Testuser2.account (Global Admin, AWS) - This account is inactive but has admin privileges, which is a significant security risk.
+   - temp.admin (Privileged Admin, Azure) - This account is inactive but has privileged access, making it a potential security threat.
+
+2. **Excessive Admin Access:**
+   - cloud.admin (Global Admin, Azure) - This user has global admin access, which could be too broad and pose a risk even when the user is active.
+   - Testuser2.account (Global Admin, AWS) - Although inactive, this account still has admin privileges, which could lead to excessive access if it becomes active.
+
+3. **Risky Accounts:**
+   - Testuser2.account (Global Admin, AWS) - This account has admin privileges and is inactive, making it a high-risk account.
+   - temp.admin (Privileged Admin, Azure) - Similar to Testuser2.account, this account has privileged access and is inactive, making it a risk.
+
+4. **Security Concerns:**
+   - The presence of inactive privileged accounts (Testuser2.account and temp.admin) poses a significant security risk.
+   - The excessive admin access granted to cloud.admin and Testuser2.account could lead to unauthorized actions, even when the users are active.
+   - It is essential to review the application roles, as the access level may not be necessary for all accounts (e.g., Global Admin access).
