@@ -1,11 +1,12 @@
 username,role,status,risk_score,MFA_enabled,account_type
-john.admin,Global Admin,Active,95,No,Admin
+reet.admin,Global Admin,Active,95,No,Admin
 temp.admin,Privileged Admin,Inactive,98,No,Admin
 shared.ops,Shared Admin,Active,92,No,Shared
 aws.root,Root Account,Active,100,No,Admin
-sarah.user,Employee,Active,15,Yes,Employee
-mike.dev,Developer,Active,40,Yes,Employee
-finance.temp,Finance Analyst,Inactive,55,Yes,Employee
+test.user,Employee,Active,15,Yes,Employee
+test.dev,Developer,Active,40,Yes,Employee
+finance.temp,Finance Analyst,Inactive,55,Yes,Contractor
 contractor.aws,Cloud Contractor,Active,88,No,Contractor
 legacy.admin,Legacy Admin,Inactive,99,No,Admin
 intern.user,Intern,Active,30,No,Intern
+New.user,Intern,Active,30,No,Intern

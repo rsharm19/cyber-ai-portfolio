@@ -1,0 +1,11 @@
+username,role,status,risk_score,MFA_enabled,account_type,severity,findings
+john.admin,Global Admin,Active,95,No,Admin,Critical,"MFA disabled, Critical risk score"
+temp.admin,Privileged Admin,Inactive,98,No,Admin,Critical,"Inactive privileged account, MFA disabled, Critical risk score"
+shared.ops,Shared Admin,Active,92,No,Shared,Critical,"MFA disabled, Shared account risk, Critical risk score"
+aws.root,Root Account,Active,100,No,Admin,Critical,"MFA disabled, Critical risk score"
+sarah.user,Employee,Active,15,Yes,Employee,Low,
+mike.dev,Developer,Active,40,Yes,Employee,Medium,
+finance.temp,Finance Analyst,Inactive,55,Yes,Employee,Medium,
+contractor.aws,Cloud Contractor,Active,88,No,Contractor,High,"MFA disabled, Contractor access review required"
+legacy.admin,Legacy Admin,Inactive,99,No,Admin,Critical,"Inactive privileged account, MFA disabled, Critical risk score"
+intern.user,Intern,Active,30,No,Intern,Low,MFA disabled

@@ -1,0 +1,48 @@
+**Executive Summary:**
+
+The provided IAM dataset reveals several critical security risks, including unauthorized access, MFA non-compliance, inactive privileged accounts, shared account risks, and contractor risks. Approximately 57% of users are categorized as high or critical risk, posing a substantial threat to organizational security. Priority remediation efforts are needed to address these issues.
+
+**Critical Findings:**
+
+- **MFA non-compliance:** 60% of the users have MFA disabled, leaving the organization vulnerable to unauthorized access.
+- **Inactive privileged accounts:** 4 accounts (30% of all privileged accounts) are inactive, increasing the likelihood of unauthorized access.
+- **Shared account risks:** 20% of users hold shared account privileges with no MFA enabled.
+- **Contractor access review required:** All contractor accounts lack MFA protection, requiring review and adjustment of their access privileges.
+
+**Top Risks Users (Risk Score >= 90 and Status Active):**
+
+- john.admin (Role: Global Admin, Risk Score: 95, Status: Active)
+- aws.root (Role: Root Account, Risk Score: 100, Status: Active)
+- contractor.aws (Role: Cloud Contractor, Risk Score: 88, Status: Active)
+
+**MF Compliance Concerns:**
+
+- 40% of users are not using MFA: john.admin, temp.admin, shared.ops, aws.root, finance.temp, legacy.admin, intern.user
+- All contractor accounts lack MFA protection
+
+**Dormant Privileged Accounts:**
+
+- temp.admin (Privileged Admin, Inactive)
+- legacy.admin (Legacy Admin, Inactive)
+
+**Shared Account Risks:**
+
+- shared.ops (Shared Admin, Active, Risk Score: 92)
+
+**Contractor Risks:**
+
+- contractor.aws (Cloud Contractor, Active, Risk Score: 88)
+
+**Remediation Recommendations:**
+
+1. **Enable MFA for all users:** Ensure that MFA is enforced for all users to prevent unauthorized access.
+2. **Revoke inactive privileged accounts:** Delete or demote inactive privileged accounts to reduce security risks.
+3. **Restrict shared account access:** Limit shared account privileges and enforce MFA on all shared accounts.
+4. **Conduct contractor access reviews:** Assess contractor access and privileges to ensure compliance with organizational policies and regulatory requirements.
+5. **Monitor user accounts:** Regularly review user accounts to ensure they adhere to organizational policies and adhere to the established risk scoring methodology.
+
+**Priority Recommendations:**
+
+- Immediately address the MFA non-compliance concerns by enabling MFA for all users.
+- Revoke and remigrate the dormantly privileged accounts for temp.admin and legacy.admin.
+- Conducet immediate review and assessment for contractor.aws.

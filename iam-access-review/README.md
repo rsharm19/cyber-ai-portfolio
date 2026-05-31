@@ -1,65 +1,3 @@
-# Day 1 - Setup Ready
-
-- Create GitHub repo	
-- Install Python & VS Code	
-- Setup folders
-
-# Day 2 - AI Security Assistant
-
-This project is part of my Cybersecurity + AI portfolio journey.
-
-## Features
-- Basic AI-style security assistant
-- Answers cybersecurity questions
-- Built using Python
-
-## Skills Used
-- Python
-- Dictionaries
-- User Input Handling
-
-Note: 
-1) While committing code to git you might see error "Author identity unknown" so please make sure your name and email is configured for git with below commands:
-  git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
-2) For API Integration used Free Groq API Key as OpenAI API was giving error -exceeded your current quota
-3) Do not PUSH API key to git. Use it via .env file and add this file to .gitignore so that git will know that it is not suppose to be pushed to git repo and file will be at local only
-4) Do not add print API key during execution
-
-## Features
-- AI-powered cybersecurity assistant
-- Dynamic prompt engineering
-- Security topic selection
-- API integration
-- Chat logging
-- Error handling
-
-# AI IAM Access Review Analyzer
-
-## Overview
-This project uses AI to analyze IAM access review data and identify risky permissions.
-
-## Features
-- CSV-based access review
-- AI-generated security findings
-- Risk detection
-- Privileged account analysis
-
-## Technologies
-- Python
-- Pandas
-- Groq API
-- GenAI Prompt Engineering
-
-## Security Checks
-- Inactive admin accounts
-- Excessive privileges
-- Risky access review
-
-## Dashboard UI
-- Streamlit
-- IAM Governance Dashboard Project
-
 ## Project 1: AI-Powered IAM Governance Dashboard
 Overview:
 The AI-Powered IAM Governance Dashboard is a cybersecurity project designed to simulate enterprise Identity and Access Management (IAM) governance activities. The solution automates access review analysis, identifies high-risk accounts, evaluates MFA compliance, and provides security insights through an interactive web dashboard.
@@ -99,6 +37,7 @@ Security metrics and KPIs
 Risk severity visualization
 Search and filtering capabilities
 Downloadable reports
+CSV upload option 
 
 AI-Ready Architecture
 Designed for future GenAI integration
