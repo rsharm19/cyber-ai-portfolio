@@ -23,7 +23,10 @@ uploaded_file = st.file_uploader(
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
 else:
-    df = pd.read_csv("enterprise_users.csv")
+    from pathlib import Path
+    csv_file = Path(__file__).parent / "enterprise_users.csv"
+    df = pd.read_csv(csv_file)
+   # df = pd.read_csv("enterprise_users.csv")
 
 df.columns = df.columns.str.strip()
 
