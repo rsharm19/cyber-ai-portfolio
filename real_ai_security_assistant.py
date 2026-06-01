@@ -1,4 +1,6 @@
-
+# Python-based AI cybersecurity assistant using Groq’s OpenAI-compatible API. 
+# The application securely loads API keys from environment variables, uses prompt engineering
+#  via system prompts, sends user questions to an LLM, and displays AI-generated cybersecurity guidance.
 
 from openai import OpenAI
 from dotenv import load_dotenv
@@ -7,7 +9,7 @@ import os
 load_dotenv()
 
 client = OpenAI(
-    api_key=os.getenv("OPENAI_API_KEY"),
+    api_key=os.getenv("Grog_API_KEY"),
     base_url="https://api.groq.com/openai/v1"
 )
 

@@ -1,0 +1,5 @@
+## AI quality depends heavily on prompt quality
+## LLMs sometimes give generic responses unless we force:
+rule-based thinking
+explicit conditions
+structured output

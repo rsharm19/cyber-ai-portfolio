@@ -1,0 +1,21 @@
+username,role,status,MFA_enabled,account_type,last_login_days
+azure.admin,Global Administrator,Active,No,Employee,2
+john.doe,Domain Administrator,Active,No,Employee,5
+cyberark.admin,CyberArk Administrator,Active,Yes,Employee,3
+sailpoint.admin,SailPoint Administrator,Active,Yes,Employee,8
+sap.admin,SAP Security Admin,Active,No,Employee,12
+oracle.dba,Oracle DBA,Active,No,Employee,15
+aws.admin,AWS Administrator,Active,No,Employee,4
+shared.ops,Operations Administrator,Active,No,Service,45
+backup.svc,Backup Service Account,Active,No,Service,120
+hr.manager,HR Manager,Active,Yes,Employee,5
+finance.approver,Finance Approver,Active,Yes,Employee,10
+payroll.admin,Payroll Administrator,Active,No,Employee,6
+prod.support,Production Support Admin,Active,No,Employee,2
+root.account,Root Account,Active,No,Employee,1
+contractor.dev,Contractor Developer,Active,No,Contractor,60
+vendor.admin,Vendor Support Engineer,Active,No,Contractor,90
+sales.manager,Sales Manager,Active,Yes,Employee,7
+workday.admin,Workday Administrator,Active,No,Employee,14
+dormant.user,Business Analyst,Inactive,Yes,Employee,180
+breakglass.user,Break Glass Account,Active,No,Employee,1

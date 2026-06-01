@@ -1,12 +1,12 @@
-username,role,status,risk_score,MFA_enabled,account_type
-reet.admin,Global Admin,Active,95,No,Admin
-temp.admin,Privileged Admin,Inactive,98,No,Admin
-shared.ops,Shared Admin,Active,92,No,Shared
-aws.root,Root Account,Active,100,No,Admin
-test.user,Employee,Active,15,Yes,Employee
-test.dev,Developer,Active,40,Yes,Employee
-finance.temp,Finance Analyst,Inactive,55,Yes,Contractor
-contractor.aws,Cloud Contractor,Active,88,No,Contractor
-legacy.admin,Legacy Admin,Inactive,99,No,Admin
-intern.user,Intern,Active,30,No,Intern
-New.user,Intern,Active,30,No,Intern
+username,role,status,MFA_enabled,account_type
+reet.admin,Global Admin,Active,No,Admin
+temp.admin,Privileged Admin,Inactive,No,Admin
+shared.ops,Shared Admin,Active,No,Shared
+aws.root,Root Account,Inactive,No,Admin
+test.user,Employee,Active,Yes,Employee
+test.dev,Developer,Active,Yes,Employee
+finance.temp,Finance Analyst,Inactive,Yes,Contractor
+contractor.aws,Cloud Contractor,Active,No,Contractor
+legacy.admin,Legacy Admin,Inactive,No,Admin
+intern.user,Intern,Active,No,Intern
+New.user,Intern,Active,No,Intern

@@ -1,4 +1,4 @@
-Identity Provider (IdP)
+## Identity Provider (IdP)
 System that:
 authenticates users
 verifies identity
@@ -16,7 +16,7 @@ What IdP Does
 - User identity verification
 - SSO
 
-Service Provider (SP)
+## Service Provider (SP)
 Application/service user wants to access.
 
 Examples
@@ -29,7 +29,7 @@ What SP Does
 - Trusts IdP authentication
 - Grants access after validation
 
-Authentication Flow
+## Authentication Flow
 1. User opens Salesforce
 2. Salesforce redirects user to Okta
 3. User logs into Okta
@@ -50,7 +50,7 @@ It trusts:
 
 the IdP
 
-Architecture Diagram
+## Architecture Diagram
 +--------+        +--------+        +-------------+
 | User   | -----> | Okta   | -----> | Salesforce  |
 |        |        | (IdP)  |        |    (SP)     |
