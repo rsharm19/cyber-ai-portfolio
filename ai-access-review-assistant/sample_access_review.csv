@@ -1,0 +1,6 @@
+username,role,status,MFA_enabled,account_type,last_login_days
+john.admin,Domain Administrator,Inactive,No,Employee,120
+cyberark.admin,CyberArk Administrator,Active,Yes,Employee,2
+contractor.dev,Developer,Active,No,Contractor,65
+root.account,Root Account,Active,No,Employee,1
+finance.user,Finance User,Active,Yes,Employee,8

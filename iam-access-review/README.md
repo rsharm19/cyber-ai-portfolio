@@ -1,103 +1,77 @@
-## Project 1: AI-Powered IAM Governance Dashboard
-Overview:
-The AI-Powered IAM Governance Dashboard is a cybersecurity project designed to simulate enterprise Identity and Access Management (IAM) governance activities. The solution automates access review analysis, identifies high-risk accounts, evaluates MFA compliance, and provides security insights through an interactive web dashboard.
+# IAM Governance Dashboard
+## Overview
+IAM Governance Dashboard is a Streamlit-based cybersecurity application designed to simulate Identity and Access Management (IAM) governance activities.
+The dashboard analyses user access data and helps identify security risks such as privileged accounts, inactive users, dormant accounts, and Multi-Factor Authentication (MFA) compliance issues.
 
-Built using Python, Pandas, and Streamlit, the project demonstrates how organizations can leverage automation and analytics to improve identity governance, reduce security risks, and support compliance initiatives.
+## Business Problem
+Organizations often struggle to identify:
+- High-risk privileged accounts
+- Dormant users
+- Accounts without MFA
+- Inactive users with access rights
+This project provides a centralized governance dashboard to improve visibility and support access review activities.
 
-Business Problem :
+## Solution Workflow
 
-Organizations often manage thousands of user accounts across multiple systems. Manual access reviews can be time-consuming and may fail to identify:
+CSV Upload
+↓
+Identity Data Analysis
+↓
+Risk Scoring
+↓
+Risk Classification
+↓
+Governance Dashboard
+↓
+Access Review Insights
 
-Dormant privileged accounts
-Excessive access rights
-Shared accounts
-Missing MFA controls
-Contractor access risks
-High-risk identities
+## Features
+✅ CSV Upload Support
+✅ Dynamic Risk Scoring
+✅ Privileged Account Identification
+✅ MFA Compliance Monitoring
+✅ Dormant Account Detection
+✅ Inactive User Monitoring
+✅ Search and Filtering
+✅ Risk Metrics Dashboard
 
-This project addresses these challenges by automating risk analysis and presenting actionable insights through a user-friendly dashboard.
+## Screenshots
+### Dashboard Overview
+<img src="screenshots/DahsboardUI.png" width="900">
 
-Key Features
+### Severity Chart
+<img src="screenshots/Severity_Chart.png" width="900">
 
-Identity Governance Analytics
-User access review analysis
-Risk-based account classification
-Privileged account identification
-Dormant account detection
+### Critical Accounts View
+<img src="screenshots/CriticalAccounts.png" width="900">
 
-Security Controls Validation
-MFA compliance verification
-Shared account detection
-High-risk user identification
-Inactive privileged account monitoring
+## Technology Stack
 
-Dashboard & Reporting
-Interactive Streamlit dashboard
-Security metrics and KPIs
-Risk severity visualization
-Search and filtering capabilities
-Downloadable reports
-CSV upload option 
+| Technology | Purpose |
+|------------|---------|
+| Python | Core programming language used for data processing and IAM risk analysis |
+| Streamlit | Interactive web dashboard |
+| Pandas | Data ingestion and analysis |
+| GitHub | Version control and portfolio hosting |
+| Streamlit Cloud | Application deployment |
 
-AI-Ready Architecture
-Designed for future GenAI integration
-Automated remediation recommendations
-Security governance insights
+## Key IAM Concepts Demonstrated
+- Identity Governance
+- Access Reviews
+- Risk-Based Access Certification
+- Least Privilege Principle
+- MFA Compliance
+- User Lifecycle Management
 
-Technology Stack:
-Python
-Pandas
-Streamlit
-Git & GitHub
-CSV-based IAM datasets
-AI Integration Framework (future enhancement)
+## Sample Use Cases
+- IAM Governance Reviews
+- Internal Security Audits
+- Quarterly Access Certification
+- Compliance Monitoring
 
-Security Concepts Demonstrated"
-Identity & Access Management (IAM)
-Identity Governance & Administration (IGA)
-Access Reviews
-Role-Based Access Control (RBAC)
-Privileged Access Management (PAM)
-Multi-Factor Authentication (MFA)
-Access Certification
-Risk-Based Governance
 
-Risk Classification Model"
-Risk Score	Severity
-90 – 100	Critical
-70 – 89	High
-40 – 69	Medium
-Below 40	Low
-
-Sample Security Findings
-The dashboard can identify:
-
-Privileged accounts without MFA
-Dormant administrator accounts
-Shared administrative credentials
-Contractor accounts requiring review
-High-risk identities needing certification
-
-Learning Outcomes
-Through this project, I gained hands-on experience in:
-
-IAM governance processes
-Cybersecurity risk analysis
-Python automation
-Security dashboard development
-Data analysis with Pandas
-Streamlit web application development
-GitHub portfolio management
-Designing AI-assisted security solutions
-
-Future Enhancements
-
-Planned enhancements include:
-Azure AD integration
-SAML SSO validation
-AI-powered remediation recommendations
-PDF audit report generation
-User authentication and authorization
-Access certification workflows
-PAM governance simulation
-GenAI security assistant integration
+## Future Enhancements
+- PDF governance report export for audit and compliance reviews
+- Advanced filtering by role, department, and risk level
+- Support for importing SailPoint and Saviynt access review reports
+- Enhanced role-based risk scoring for privileged and business-critical accounts
