@@ -12,7 +12,7 @@ Organizations often struggle to identify:
 This project provides a centralized governance dashboard to improve visibility and support access review activities.
 
 ## Solution Workflow
-
+```text
 CSV Upload
 ↓
 Identity Data Analysis
@@ -24,8 +24,10 @@ Risk Classification
 Governance Dashboard
 ↓
 Access Review Insights
+```
 
 ## Features
+```text
 ✅ CSV Upload Support
 ✅ Dynamic Risk Scoring
 ✅ Privileged Account Identification
@@ -34,6 +36,7 @@ Access Review Insights
 ✅ Inactive User Monitoring
 ✅ Search and Filtering
 ✅ Risk Metrics Dashboard
+```
 
 ## Screenshots
 ### Dashboard Overview
