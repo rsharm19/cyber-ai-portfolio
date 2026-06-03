@@ -1,0 +1,29 @@
+
+=================================
+AI ACCESS REVIEW ASSESSMENT
+=================================
+
+Risk Level: Critical
+
+Summary:
+Identity governance risks detected during access review.
+
+Key Findings:
+
+• john.admin does not have MFA enabled
+• john.admin is inactive
+• john.admin has privileged access
+• john.admin is dormant
+• cyberark.admin has privileged access
+• contractor.dev does not have MFA enabled
+• root.account does not have MFA enabled
+• root.account has privileged access
+
+Recommendations:
+
+• Enable MFA immediately for affected accounts.
+• Disable or review dormant accounts.
+• Conduct privileged access certification.
+• Remove inactive accounts from critical systems.
+
+=================================

@@ -7,11 +7,11 @@ from datetime import datetime
 # ==========================================
 
 st.set_page_config(
-    page_title="AI Access Review Assistant",
+    page_title="AI-Style Access Review Assistant",
     layout="wide"
 )
 
-st.title("🤖 AI Access Review Assistant")
+st.title("AI-Style Access Review Assistant")
 st.write(
     "Upload an IAM Access Review CSV and generate a security assessment report."
 )
@@ -87,7 +87,7 @@ Key Findings:
     for rec in recommendations:
         report += f"\n• {rec}"
 
-        current_date = datetime.now().strftime("%Y-%m-%d")
+    current_date = datetime.now().strftime("%Y-%m-%d")
 
     report += f"""
 
