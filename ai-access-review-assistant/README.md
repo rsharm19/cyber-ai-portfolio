@@ -63,19 +63,19 @@ Produce Recommendations & Report
 
 ### Upload Access Review Data
 
-<img src="cyber-ai-portfolio\ai-access-review-assistant\screenshots\Upload Access Review Data.png" width="900">
+<img src="cyber-ai-portfolio\ai-access-review-assistant\screenshots\UploadAccessReviewData.png" width="900">
 
 ### IAM Findings
 
-<img src="cyber-ai-portfolio\ai-access-review-assistant\screenshots\IAM Findings.png" width="900">
+<img src="cyber-ai-portfolio\ai-access-review-assistant\screenshots\IAMFindings.png" width="900">
 
 ### AI Security Assessment
 
-<img rc="cyber-ai-portfolio\ai-access-review-assistant\screenshots\GenerateAIAssessmentResults.png" width="900">
+<img src="cyber-ai-portfolio\ai-access-review-assistant\screenshots\GenerateAIAssessmentResults.png" width="900">
 
 
 ### Downloadable Report
-<img rc="cyber-ai-portfolio\ai-access-review-assistant\screenshots\Downloadable Report.png" width="900">
+<img src="cyber-ai-portfolio\ai-access-review-assistant\screenshots\DownloadableReport.png" width="900">
 ---
 
 ## Technology Stack
