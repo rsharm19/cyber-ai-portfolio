@@ -1,0 +1,7 @@
+username,account_type,system,mfa_enabled,last_login_days,status
+admin01,Domain Admin,Active Directory,No,120,Active
+oracle_dba,Database Admin,Oracle,Yes,15,Active
+shared_root,Root Account,Linux,No,300,Active
+svc_backup,Service Account,Backup Server,Yes,180,Active
+john.admin,CyberArk Admin,CyberArk,Yes,5,Active
+contractor.admin,Privileged User,Windows,No,200,Inactive
