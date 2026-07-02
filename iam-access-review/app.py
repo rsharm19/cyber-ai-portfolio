@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from pathlib import Path
 
 # =========================
 # PAGE CONFIG
@@ -28,6 +29,20 @@ privileged users, and governance findings.
     # st.stop()
 
 # df.columns = df.columns.str.strip()
+# =========================
+# SAMPLE FILE INFORMATION
+# =========================
+
+st.info("""
+Required CSV Columns:
+
+• username
+• role
+• status
+• MFA_enabled
+• account_type
+• last_login_days
+""")
 
 # =========================
 # FILE UPLOAD
@@ -38,14 +53,54 @@ uploaded_file = st.file_uploader(
     type=["csv"]
 )
 
+# =========================
+# LOAD DATA
+# =========================
+
 if uploaded_file is not None:
+
     df = pd.read_csv(uploaded_file)
+
+    st.success("Custom CSV uploaded successfully.")
+
 else:
-    st.info("Using default dataset: UsersDynamicRisk.csv")
-    df = pd.read_csv("UsersDynamicRisk.csv")
+
+    csv_path = Path(__file__).parent / "UsersDynamicRisk.csv"
+
+    if csv_path.exists():
+
+        st.info(
+            "No file uploaded. Using sample IAM dataset."
+        )
+
+        df = pd.read_csv(csv_path)
+
+    else:
+
+        st.error(
+            "Sample dataset not found. Please upload a CSV file."
+        )
+
+        st.stop()
 
 df.columns = df.columns.str.strip()
 
+# =========================
+# DOWNLOAD SAMPLE CSV
+# =========================
+
+sample_csv = Path(__file__).parent / "UsersDynamicRisk.csv"
+
+if sample_csv.exists():
+
+    with open(sample_csv, "rb") as file:
+
+        st.download_button(
+            label="📥 Download Sample CSV",
+            data=file,
+            file_name="UsersDynamicRisk.csv",
+            mime="text/csv"
+        )
 # =========================
 # DYNAMIC RISK SCORING
 # =========================
